@@ -62,6 +62,7 @@ Links:
 - PGADMIN_DEFAULT_PASSWORD=123456
 
 - Nuestro proyecto tiene 2 GUI para poder manipular la base de datos
+
 1. PgAdmin
 2. TablePlus *
 
@@ -71,27 +72,20 @@ Links:
 
 ### Temas puntuales de la sección.
 
-El objetivo de esta sección es empezar nuestro camino en las bases de datos con las sentencias más comunes y explicaciones generales para comprender a qué nos estamos metiendo.
-Puntualmente veremos:
+El objetivo de esta sección es empezar nuestro camino en las bases de datos con
+las sentencias más comunes y explicaciones generales para comprender a qué nos
+estamos metiendo. Puntualmente veremos:
 
--   Queries:
-        Creación de tablas
-        Drop / Truncate
-        SELECT
-        INSERT
-        DELETE
-        UPDATE
+- Queries: Creación de tablas Drop / Truncate SELECT INSERT DELETE UPDATE
 
--   Funciones y operadores como:
-        Substring
-        Position
-        Concat
-        ||
+- Funciones y operadores como: Substring Position Concat ||
 
--   Constrains básicos
--   Serial
+- Constrains básicos
+- Serial
 
-La idea principal es tener nuestra introducción en un ambiente controlado que nos permita jugar y aprender desde cero y poco a poco, ir escribiendo sentencias más específicas.
+La idea principal es tener nuestra introducción en un ambiente controlado que
+nos permita jugar y aprender desde cero y poco a poco, ir escribiendo sentencias
+más específicas.
 
 ---
 
@@ -99,24 +93,70 @@ La idea principal es tener nuestra introducción en un ambiente controlado que n
 
 ### Temas puntuales de la sección
 
-Esta sección tiene por objetivo aprender a realizar agrupaciones, conteos y en general poder extraer información de tablas mediante queries.
-Puntualmente veremos:
+Esta sección tiene por objetivo aprender a realizar agrupaciones, conteos y en
+general poder extraer información de tablas mediante queries. Puntualmente
+veremos:
 
--   Aggregation Functions
-        Count
-        Min
-        Max
-        Avg
+- Aggregation Functions Count Min Max Avg
 
--   Group By
--   Round
--   Between
--   Introducción a subqueries
--   Distinct
--   Agrupaciones por partes de strings
+- Group By
+- Round
+- Between
+- Distinct
+- Agrupaciones por partes de strings
+- Introducción a subqueries
 
-Esta sección se preocupará en ayudarlos a poder generar estadísticas que pueden llegar a necesitar a la hora de crear reportes o brindar información a quien lo solicite de una forma digerible y eficiente.
+- Comandos SQL - Terminologia
+  1. DDL - Data Definition Language
+     - Create, Alter, Truncate
+  2. DML - Data Manipulation Language
+     - Insert, Delete, Update
+  3. TCL - Transaction Control Language
+     - Commit, Rollback
+  4. DQL - Data Query Language
+     - Select
+
+- Aggregate Functions & Filtering
+  - Aggregate Functions
+    - Count
+    - Sum
+    - Max
+    - Min
+    - Group By
+    - Having
+    - Order By
+  - Filtering
+    - Like
+    - In
+    - Is Null
+    - Is Not Null
+    - Where
+    - And
+    - Or
+    - Between
+
+- Estructura general de un SELECT
+
+```sql
+select distinct 
+        -- *, campos, alias, funciones
+where 
+        -- condicion, condiciones, and, or, in, like
+joins
+group by 
+        -- campo agrupador, ALL
+having 
+        -- condicion
+order by 
+        -- expresion, asc, desc
+limit 
+        -- valor, ALL
+offset 
+        -- punto de inicio
+```
+
+Esta sección se preocupará en ayudarlos a poder generar estadísticas que pueden
+llegar a necesitar a la hora de crear reportes o brindar información a quien lo
+solicite de una forma digerible y eficiente.
 
 ---
-
-
