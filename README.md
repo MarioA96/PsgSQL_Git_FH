@@ -160,3 +160,77 @@ llegar a necesitar a la hora de crear reportes o brindar información a quien lo
 solicite de una forma digerible y eficiente.
 
 ---
+
+## Seccion 4 - Relaciones, Llaves y Contraints
+
+### Temas puntuales de la sección
+
+El objetivo de esta sección es comprender sobre las llaves que no son más que constraints (restricciones)
+
+Puntualmente veremos:
+
+1. Exposición sobre las relaciones de bases de datos
+
+Aqui veremos los diferentes tipos de relaciones que existen en las bases de datos relacionales
+
+- Uno a Uno
+Este tipo de relación se da cuando un registro en una tabla está asociado con un solo registro en otra tabla, y viceversa. Por ejemplo, una tabla de "Personas" y una tabla de "Pasaportes", donde cada persona tiene un único pasaporte.
+- Uno a Muchos
+Este tipo de relación se da cuando un registro en una tabla puede estar asociado con múltiples registros en otra tabla. Por ejemplo, una tabla de "Autores" y una tabla de "Libros", donde un autor puede haber escrito varios libros.
+Un caso particular puede ser incluso de una `relación recursiva` (Relacion a si misma), como por ejemplo una tabla de "Empleados" donde un empleado puede tener varios subordinados, pero cada subordinado tiene un solo jefe.
+- Muchos a Muchos
+Este tipo de relación se da cuando múltiples registros en una tabla pueden estar asociados con múltiples registros en otra tabla. Por ejemplo, una tabla de "Estudiantes" y una tabla de "Cursos", donde un estudiante puede estar inscrito en varios cursos y un curso puede tener varios estudiantes. Para implementar este tipo de relación en una base de datos relacional, generalmente se utiliza una `tabla intermedia` (o tabla de unión) que contiene las `claves primarias` de ambas tablas.
+
+2. Exposición sobre las llaves y diferentes tipos de llaves
+
+Aqui veremos los diferentes tipos de llaves que existen en las bases de datos relacionales. Las llaves son atributos o conjuntos de atributos que se utilizan para identificar de manera única los registros en una tabla y establecer relaciones entre tablas.
+
+- Llave primaria (Primary Key)
+    - Identifica un registro de forma única en una tabla.
+    - Una tabla puede tener varios identificadores unicos, pero solo una llave primaria.
+    - La llave primaria esta basada en los requerimientos del negocio.
+    - No puede contener valores nulos.
+
+- Llave candidata (Candidate Key)
+    - Un atributo o conjunto de ellos que identifican de forma única un registro en una tabla.
+    - Menos la llave primaria, los demas se consideran claves candidatas.
+
+- Super llave (Super Key)
+    - Es un conjunto de atributos que puede identificar de forma única un registro en una tabla.
+    - Es un superconjunto de la llave candidata.
+
+- Llave foránea (Foreign Key)
+    - Llaves foraneas son usadas para apuntar a la llave primaria de otra tabla.
+    - Atributo o conjunto de atributos que establece una relación entre dos tablas.
+    - Hace referencia a la llave primaria de otra tabla.
+    - Puede contener valores nulos.
+
+- Llave compuesta (Composite Key)
+    - Cuando una llave primaria consta de más de un atributo, se conoce como clave compuesta.
+    - Conjunto de dos o más atributos que se utilizan para identificar de forma única un registro en una tabla.
+    - Se utiliza cuando ninguna de las columnas individuales puede identificar de forma única un registro.
+
+- Llave sustituta (Surrogate Key)
+    - Atributo o conjunto de atributos que se utilizan como llave primaria en lugar de la llave natural.
+    - Generalmente es un número entero generado automáticamente.
+
+- Llave alterna (Alternate Key)
+    - Cualquier llave candidata que no ha sido elegida como llave primaria.
+
+- Llave natural (Natural Key)
+    - Atributo o conjunto de atributos que tienen un significado en el mundo real y se utilizan para identificar de forma única un registro.
+
+- Llave artificial (Artificial Key)
+    - Atributo o conjunto de atributos que se utilizan como llave primaria, pero que no tienen un significado en el mundo real.
+
+3. Checks de columnas y tablas
+
+4. Indices
+
+5. Llaves foráneas
+
+6. Restricciones con las relaciones
+
+7. Eliminaciones y actualizaciones en cascada
+
+8. Otros tipos de acciones automáticas.
