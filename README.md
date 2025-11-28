@@ -234,3 +234,22 @@ Aqui veremos los diferentes tipos de llaves que existen en las bases de datos re
 7. Eliminaciones y actualizaciones en cascada
 
 8. Otros tipos de acciones automáticas.
+
+---
+
+## Seccion 5 - Separacion de data en otras tablas | Normalización
+
+### Temas puntuales de la sección
+
+Esta sección tiene por objetivo realizar labores cotidianas que sucederán si ustedes tienen que darle mantenimiento a alguna tabla o base de datos.
+
+Puntualmente veremos
+
+  1. Actualizaciones masivas
+  2. Creación y volcado de información
+  3. Alteración de índices y checks
+  4. Eliminación de checks
+  5. Modificación de columnas mediante GUI y manualmente
+  6. Creación de tablas
+  7. Relaciones
+
