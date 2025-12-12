@@ -253,3 +253,21 @@ Puntualmente veremos
   6. Creación de tablas
   7. Relaciones
 
+#### Volcado de una tabla a otra (mediante DataGrip)
+
+Script created by DataGrip, 
+```bash
+country -> SQL Scripts -> SQL Generator
+```
+
+#### Ver relacion de un valor de una tabla (con foreign key) con otras tablas (mediante DataGrip)
+
+```bash
+Visulizando_de_tabla -> click derecho sobre el valor -> Go to -> Related Rows
+```
+
+#### Modificacion de tabla (mediante DataGrip)
+
+```bash
+Panel_izquierdo -> expande la tabla deseada -> Expande columnas -> Modify Column
+```
