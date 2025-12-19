@@ -271,3 +271,22 @@ Visulizando_de_tabla -> click derecho sobre el valor -> Go to -> Related Rows
 ```bash
 Panel_izquierdo -> expande la tabla deseada -> Expande columnas -> Modify Column
 ```
+
+---
+
+## Seccion 6 - Joins & Uniones
+
+### Temas puntuales de la sección
+
+Esta sección está enfocada en uniones y joins entre tablas, explicaremos los más comunes y haremos ejercicios hasta con 4 tablas relacionadas entre sí.
+
+Puntualmente veremos:
+- Unions
+- Conteos
+- Joins
+- Inner
+    - Left
+    - Right
+    - Outer
+    - Full
+- Y más
